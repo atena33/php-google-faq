@@ -1,0 +1,74 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  body {
+    font-family: 'Roboto',Helvetica,Arial,sans-serif;
+    header {
+      border-bottom: solid 1px;
+      position: fixed;
+      top: 0;
+      z-index: 99;
+      background-color: white;
+      width: 100%;
+      .container{
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        img {
+          width: 100px;
+          height: auto;
+        }
+        a {
+          text-decoration: none;
+          color: gray;
+          font-size: 24px;
+        }
+      }
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        ul {
+          display: flex;
+          padding-bottom: 10px;
+          li {
+            font-size: 16px;
+            list-style: none;
+            padding-right: 20px;
+            a {
+              text-decoration: none;
+              color: gray;
+              padding: 20px;
+            }
+          }
+        }
+        .account {
+          a {
+            text-decoration: none;
+            color: gray;
+            padding-right: 30px;
+          }
+        }
+     }
+    }
+
+    // Qui iniziano le regole del main
+    main {
+      padding-top: 250px;
+      z-index: 0;
+      width: 70%;
+      margin-left: 15%;
+      .dom {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 40px;
+        padding-bottom: 20px;
+      }
+      .risp {
+        line-height: 25px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+
+}
